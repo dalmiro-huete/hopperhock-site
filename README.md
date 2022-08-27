@@ -1,5 +1,5 @@
 # Hopperhock website
-Website in Next Js for an startup we had with other two friends to brings software services in CR
+Website in Next Js for an startup we had with other two friends to bring software services in CR
 
 ## Setup Instructions
 
