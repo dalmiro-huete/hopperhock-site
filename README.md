@@ -1,30 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Hopperhock website
+Website in Next Js for an startup we had with other two friends to brings software services in CR
 
-## Getting Started
+## Setup Instructions
 
-First, run the development server:
+1. Clone or download the project.
+2. `cd` in the project directory.
+3. `env` file was added in the repository just for demo purposes
+4. Run `yarn install` or `npm install` to install all dependencies.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Commands
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `yarn start`: to start a local development server.
+- `yarn test`: to run the entire unit test suite using `jest`.
+- `yarn test: coverage`: to run the entire unit test suite using `jest` with coverage.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `yarn upgrade --latest`: To upgrade all packages to their latest versions (could include breaking changes).
 
-## Learn More
+## Code Structure
 
-To learn more about Next.js, take a look at the following resources:
+All source code is located in the `src/` directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. `src/pages` are the main pages, parent components of the application. They are composed of other components to provide all the functionality.
+2. `src/modules` are stateful components usually or submodules that integrate the main modules. i.e the module could be the home page but the component could be the introduction section that is on this module.
+3. `src/shared` includes the components, hooks, images, queries, styles, types, and utils that are shared through the solution.
 
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## DEMO
+Open your browser and go to http://hopperhock-ui-dev.s3-website.us-east-2.amazonaws.com/home
